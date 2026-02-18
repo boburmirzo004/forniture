@@ -11,7 +11,7 @@
 
                 <!-- logo -->
                 <div class="mobile-logo">
-                    <a href="home.html">
+                    <a href="{% url 'shared:home' %}">
                         <img class="logo-mobile img-fluid" src="{% static 'img/home/logo-mobie.png' %}" alt="Prestashop_Furnitica">
                     </a>
                 </div>
@@ -45,13 +45,13 @@
                                     <tbody>
                                         <tr>
                                             <td class="product-image">
-                                                <a href="product-detail.html">
+                                                <a href="{% url 'products:detail' %}">
                                                     <img src="{% static 'img/product/5.jpg' %}" alt="Product">
                                                 </a>
                                             </td>
                                             <td>
                                                 <div class="product-name">
-                                                    <a href="product-detail.html">Organic Strawberry Fruits</a>
+                                                    <a href="{% url 'products:detail' %}">Organic Strawberry Fruits</a>
                                                 </div>
                                                 <div>
                                                     2 x
@@ -72,8 +72,8 @@
                                         <tr>
                                             <td colspan="3" class="d-flex justify-content-center">
                                                 <div class="cart-button">
-                                                    <a href="cart.html" title="View Cart">View Cart</a>
-                                                    <a href="checkout.html" title="Checkout">Checkout</a>
+                                                    <a href="{% url 'products:cart' %}" title="View Cart">View Cart</a>
+                                                    <a href="{% url 'products:checkout' %}" title="Checkout">Checkout</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -93,7 +93,7 @@
                     <!-- logo -->
                     <div class="col-sm-2 col-md-2 d-flex align-items-center">
                         <div id="logo">
-                            <a href="home.html">
+                            <a href="{% url 'shared:home' %}">
                                 <img src="{% static 'img/home/logo.png' %}" alt="logo" class="img-fluid">
                             </a>
                         </div>
